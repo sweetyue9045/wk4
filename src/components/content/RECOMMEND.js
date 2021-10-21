@@ -15,13 +15,13 @@ export default function RECOMMEND() {
                         </div>
                     </div>
                     <div className="message_text">
-                        你知道更多台中好玩的景點,　或是有什麼一定要推薦的最佳景點嗎？<br />留言告訴我，讓更多人知道台中的隱藏景點吧！
+                        你知道更多的好玩景點，或是有什麼一定要推薦的最佳景點嗎？<br />留言告訴我，讓更多人知道台中的隱藏景點吧！
                     </div>
                 </div>
                 <div id="rec_content" className="rec_content">
-                    <input type="text" id="username" autocomplete="off" placeholder="您的暱稱 ..." className="text-success" />
-                    <input type="text" id="userplace" autocomplete="off" placeholder="推薦地點 ..." className="text-success" />
-                    <textarea id="textmessage" autocomplete="off" placeholder="留個言吧 ..."
+                    <input type="text" id="username" autoComplete="off" placeholder="您的暱稱 ..." className="text-success" />
+                    <input type="text" id="userplace" autoComplete="off" placeholder="推薦地點 ..." className="text-success" />
+                    <textarea id="textmessage" autoComplete="off" placeholder="留個言吧 ..."
                         className="text-success"></textarea>
                     <div className="button-group">
                         <button className="btn-success">清除</button>

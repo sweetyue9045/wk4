@@ -10,6 +10,7 @@ import Bottom from "../assets/im/bottom.png";
 import Van from "../assets/im/van.png";
 import Map from "../assets/im/map.png";
 
+
 export default function Header() {
     return (
         <header id="HOME">
@@ -29,7 +30,7 @@ export default function Header() {
             </div>
             <div className="menu">
                 <input className="menu-check" type="checkbox" id="menu-check" />
-                <label className="menu-open-button" for="menu-check">
+                <label className="menu-open-button" htmlFor="menu-check">
                     <img className="menu-img" src={Map} />
                     <div className="menu-text">Taichung <br />BRT | 303 | BUS</div>
                 </label>
