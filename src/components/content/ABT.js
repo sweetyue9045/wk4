@@ -1,15 +1,15 @@
-export default function ABT({ AboutJ }) {
+export default function ABT({ about }) {
     var IMG = new Array;
-    if (AboutJ.im != null) {
-        IMG.push(<img key="129xhd" className='imbus' src={AboutJ.im} alt='' />);
+    if (about.im != null) {
+        IMG.push(<img key="129xhd" className='imbus' src={about.im} alt='' />);
     }
     return (
-        <div id={AboutJ.id} className="ABT_content">
+        <div id={about.id} className="ABT_content">
             <div className="content_title">
-                <div className="subtitle">{AboutJ.subtitle}</div>
-                <div className="title">{AboutJ.title}</div>
+                <div className="subtitle">{about.subtitle}</div>
+                <div className="title">{about.title}</div>
             </div>
-            <div className="btm_content" dangerouslySetInnerHTML={{ __html: AboutJ.btm_content }}>
+            <div className="btm_content" dangerouslySetInnerHTML={{ __html: about.btm_content }}>
             </div>
            {IMG}
         </div>

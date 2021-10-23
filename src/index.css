@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "微軟正黑體", cursive;
     text-align: left;
+    text-decoration: none;
 }
 
 * ::-webkit-scrollbar {
@@ -570,7 +571,6 @@ nav {
 .showbox {
     display: block;
     transition: all .4s ease-in-out;
-
 }
 
 .outbox1 {
@@ -581,7 +581,7 @@ nav {
 }
 
 .outbox2 {
-    column-count: 2;
+    column-count: 3;
     column-gap: 15px;
     width: 100%;
     margin: auto;
@@ -679,7 +679,7 @@ nav {
     text-align: center;
     width: 100%;
     top: 0;
-    font-size: 17px;
+    font-size: var(--fz18);
     padding: 5px;
     background: rgba(0, 0, 0, 0.8);
     margin: 20px 0 0 0;
@@ -698,7 +698,7 @@ nav {
     opacity: 0;
     transition: all 0.2s ease-in-out;
     font-weight: bolder;
-    line-height: 20px;
+    line-height: 26px;
 }
 
 #FOOD .intro_text p {
@@ -713,6 +713,7 @@ nav {
     transition: all 0.2s ease-in-out;
     top: 300px;
     text-align: center;
+    font-size: var(--fz14);
 }
 
 #FOOD .intro_a a {
@@ -927,23 +928,18 @@ footer {
         font-size: 7vw;
     }
     /* vue新增class */
-    
     .menu-check:checked~.menu-item1 {
         transform: translate3d(-32.5vw, -5.4vw, 0);
     }
-    
     .menu-check:checked~.menu-item2 {
         transform: translate3d(-22vw, 14vw, 0);
     }
-    
     .menu-check:checked~.menu-item3 {
         transform: translate3d(0, 21vw, 0);
     }
-    
     .menu-check:checked~.menu-item4 {
         transform: translate3d(22vw, 14vw, 0);
     }
-    
     .menu-check:checked~.menu-item5 {
         transform: translate3d(32.5vw, -5.4vw, 0);
     }
@@ -968,10 +964,23 @@ footer {
         margin: auto;
     }
     .outbox2 {
-        column-count: 1;
+        column-count: 2;
         column-gap: 15px;
         width: 100%;
         margin: auto;
+    }
+    #FOOD .intro_title {
+        margin: 10px 0 0 0;
+        font-size: var(--fz16);
+    }
+    #FOOD .intro_text {
+        margin: 8px 0 0 0;
+        padding: 0;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    #FOOD .intro_a {
+        font-size: 12px;
     }
     /* 留言板 */
     .RECOMMEND {

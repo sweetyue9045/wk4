@@ -9,7 +9,7 @@ import Top from "../assets/im/top.png";
 import Bottom from "../assets/im/bottom.png";
 import Van from "../assets/im/van.png";
 import Map from "../assets/im/map.png";
-
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom"
 
 export default function Header() {
     return (

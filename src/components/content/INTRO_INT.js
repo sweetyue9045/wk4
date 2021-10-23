@@ -1,12 +1,12 @@
 import INTRO_I_C from "./INTRO_INT_CON"
 
 
-export default function INTRO_I({ IntroJ, isActive = false }) {
+export default function INTRO_I({ intro, isActive = false }) {
     return (
-        <div id={IntroJ.name} className={isActive ? 'intro_content_box showbox' : 'intro_content_box'}>
-            <div className={IntroJ.class}>
-                {IntroJ.contents.map(IntroJc => (
-                    <INTRO_I_C key={IntroJc.id} IntroJc={IntroJc} />
+        <div id={intro.name} className={isActive ? 'intro_content_box showbox' : 'intro_content_box'}>
+            <div className={intro.class}>
+                {intro.contents.map(introC => (
+                    <INTRO_I_C key={introC.id} introC={introC} />
                 ))}
             </div>
         </div>

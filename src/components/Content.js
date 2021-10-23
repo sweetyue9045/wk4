@@ -3,8 +3,8 @@ import INTRO_T from "./content/INTRO_TAB"
 import INTRO_I from "./content/INTRO_INT"
 import RECOMMEND from "./content/RECOMMEND"
 import OTHERS from "./content/OTHERS"
-import AboutJs from "../assets/json/about.json"
-import IntroJs from "../assets/json/intro.json"
+import abouts from "../assets/json/about.json"
+import intros from "../assets/json/intro.json"
 import { useState } from 'react';
 
 
@@ -20,8 +20,8 @@ export default function Content() {
                         <div className="top_tail"></div>
                     </div>
                 </div>
-                {AboutJs.map(AboutJ => (
-                    <ABT key={AboutJ.key} AboutJ={AboutJ} />
+                {abouts.map(about => (
+                    <ABT key={about.key} about={about} />
                 ))}
             </div>
             <div className="INTRO">
@@ -31,16 +31,16 @@ export default function Content() {
                 </div>
                 <div className="INTRO_content">
                     <div className="intro_tab">
-                        {IntroJs.map((IntroJ,index) => (
-                            <INTRO_T key={IntroJ.key} IntroJ={IntroJ} isActive={tab === index}
+                        {intros.map((intro,index) => (
+                            <INTRO_T key={intro.key} intro={intro} isActive={tab === index}
                             indexPlus={() => {
                                 settab(index)
                             }}
                             />
                         ))}
                     </div>
-                    {IntroJs.map((IntroJ,index) => (
-                        <INTRO_I key={IntroJ.key} IntroJ={IntroJ} isActive={tab === index} />
+                    {intros.map((intro,index) => (
+                        <INTRO_I key={intro.key} intro={intro} isActive={tab === index} />
                     ))}
                 </div>
             </div>
