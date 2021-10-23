@@ -1,4 +1,4 @@
-import Nav from "../components/Nav"
+import BackNav from "../components/BackNav"
 import Intros from "../components/Intros"
 import Footer from "../components/Footer"
 import intros from "../assets/json/intro.json"
@@ -18,7 +18,8 @@ function Intro({ match }) {
     );
     return (
         <div>
-            <Intros intro={intro}/>
+            <BackNav />
+            <Intros intro={intro} />
             <Footer />
         </div>
     );

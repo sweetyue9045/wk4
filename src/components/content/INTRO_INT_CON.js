@@ -5,9 +5,7 @@ export default function INTRO_I_C({ introC }) {
         <div className="content_box">
             <Link to={`/intro/${introC.id}`}>
                 <div className="intro_im">
-                    <div className="intro_carousel">
-                        <img src={introC.im} alt="" />
-                    </div>
+                    <img src={introC.im} alt="" />
                 </div>
                 <div className="intro_content">
                     <div className="intro_title">{introC.title}</div>
